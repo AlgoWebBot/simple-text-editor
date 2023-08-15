@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/21a3ce7507.js" crossorigin="anonymous"></script>
+
+    <style>
+        .active{
+            color: #1e8aab;
+            border-bottom: 2px solid black;
+        }
+        .bold{
+            font-weight: bolder;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container mx-auto mt-20 bg-sky-300 min-h-[600px]">
+        <h1 class="text-center p-8 text-3xl font-bold">My Text Editor</h1>
+
+        <div class="border-black bg-sky-100 min-h-[450px] w-3/4 mx-auto">
+            <!-- Navbar part -->
+            <div class="navbar bg-base-100 border-b">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div class="flex gap-4 pl-6 cursor-pointer text-lg">
+                            <i id="bold" class="fa-solid fa-bold"></i>
+                            <i id="italic" class="fa-solid fa-italic"></i>
+                            <i id="underline" class="fa-solid fa-underline"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <div class="flex gap-4 pl-6 cursor-pointer text-lg">
+                        <i id="text-left" class="fa-solid fa-align-left"></i>
+                        <i id="text-center" class="fa-solid fa-align-center"></i>
+                        <i id="text-justify" class="fa-solid fa-align-justify"></i>
+                        <i id="text-right" class="fa-solid fa-align-right"></i>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex gap-4 pr-6 cursor-pointer">
+                        <input type="number" class="w-10" id="font-size">
+                        <p id="capitalized" class="text-lg">Aa</p>
+                        <input type="color" id="input-color">
+                    </div>
+                </div>
+            </div>
+
+            <textarea id="input" class="bg-slate-200 mx-auto w-[95%] min-h-[360px] ml-7">
+
+            </textarea>
+
+        </div>
+
+    </div>
+
+
+    <script src="./js/button.js">
+    </script>
+    <script src="./js/bold.js"></script>
+    <script src="./js/italic.js"></script>
+    <script src="./js/underline.js"></script>
+</body>
+</html>
