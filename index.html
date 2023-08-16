@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +14,26 @@
     <script src="https://kit.fontawesome.com/21a3ce7507.js" crossorigin="anonymous"></script>
 
     <style>
-        .active{
+        .active {
             color: #1e8aab;
             border-bottom: 2px solid black;
         }
-        .bold{
+
+        .bold {
             font-weight: bolder;
         }
-        .italic{
+
+        .italic {
             font-style: italic;
         }
-        .underline{
+
+        .underline {
             text-decoration: underline;
         }
     </style>
 
 </head>
+
 <body>
     <div class="container mx-auto mt-20 bg-sky-300 min-h-[600px]">
         <h1 class="text-center p-8 text-3xl font-bold">My Text Editor</h1>
@@ -47,10 +52,10 @@
                 </div>
                 <div class="navbar-center">
                     <div class="flex gap-4 pl-6 cursor-pointer text-lg">
-                        <i id="text-left" class="fa-solid fa-align-left"></i>
-                        <i id="text-center" class="fa-solid fa-align-center"></i>
-                        <i id="text-justify" class="fa-solid fa-align-justify"></i>
-                        <i id="text-right" class="fa-solid fa-align-right"></i>
+                        <i id="text-left" class="fa-solid fa-align-left btns"></i>
+                        <i id="text-center" class="fa-solid fa-align-center btns"></i>
+                        <i id="text-justify" class="fa-solid fa-align-justify btns"></i>
+                        <i id="text-right" class="fa-solid fa-align-right btns"></i>
                     </div>
                 </div>
                 <div class="navbar-end">
@@ -62,7 +67,7 @@
                 </div>
             </div>
 
-            <textarea id="input" class="bg-slate-200 mx-auto w-[95%] min-h-[360px] ml-7">
+            <textarea id="input" class="bg-slate-200 w-[95%] min-h-[360px] ml-7 pr-7">
 
             </textarea>
 
@@ -71,10 +76,11 @@
     </div>
 
 
-    <script src="./js/button.js">
-    </script>
+    <script src="./js/button.js"></script>
     <script src="./js/bold.js"></script>
     <script src="./js/italic.js"></script>
     <script src="./js/underline.js"></script>
+    <script src="./js/text.js"></script>
 </body>
+
 </html>
